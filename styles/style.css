@@ -12,7 +12,7 @@ body {
   align-items: center;
   height: 100vh;
   font-family: open sans;
-  color: #10214e;
+  color: #104e25;
 }
 
 article {
@@ -22,8 +22,8 @@ article {
   align-items: center;
   justify-content: flex-end;
   width: 50vw;
-  max-width: 25em;
-  min-width: 20em;
+  max-width: 50em;
+  min-width: 40em;
   border-radius: 1rem;
   background: rgb(0,239,255);
   background: linear-gradient(0deg, rgba(0,239,255,1) 40%, #4e54c8 100%);
@@ -37,11 +37,20 @@ header {
   justify-content: center;
   align-items: center;
   justify-content: flex-end;
+  height: 15em;
+  width: 40em;
 }
 
 h1 {
-  margin: 2rem 0 1rem;
+  margin: 2rem 0 -1rem;
   color: rgba(0,239,255,1);
+}
+
+/* job */
+p1 {
+  position: relative;
+  left: 1rem;
+  top: 3rem;
 }
 
 button {
