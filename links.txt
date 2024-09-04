@@ -1,0 +1,28 @@
+CSS first steps
+https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps
+
+
+Alles over CSS
+https://developer.mozilla.org/en-US/docs/Web/CSS
+
+
+CSS Reference
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#index
+
+
+CSS Selectors
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors
+
+
+Wil je een browser die ontwikkelen nog makkelijker maakt?
+https://polypane.app/
+
+
+oefen met verschillende CSS Selectors
+https://flukeout.github.io/
+
+
+HTML elements reference
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+
+
