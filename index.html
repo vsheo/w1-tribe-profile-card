@@ -7,70 +7,77 @@
     <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
-    <article>
-      <header>
-        <!-- profile picture and flip -->
-        <div class="flip-picture">
-          <!-- maakt de foto 3d zodat het geflipped kan worden(niet gespiegeld) -->
-          <div class="flip-picture-inner">
-            <div class="flip-picture-front">
-              <img src="assets/profile-picture.png" alt="" width="800" height="800">
-            </div>
-            <div class="flip-picture-back">
-              <img src="assets/dog.png" alt="" width="800" height="800">
-            </div>
-          </div>
-        </div>
+    <div class="card">
+      <!-- <div class="card__front"> -->
+        <article class="card__front">
+          <header>
+              <!-- profile picture and flip -->
+              <div class="flip-picture">
+                <!-- maakt de foto 3d zodat het geflipped kan worden(niet gespiegeld) -->
+                <div class="flip-picture-inner">
+                  <div class="flip-picture-front">
+                    <img src="assets/profile-picture.png" alt="" width="800" height="800">
+                  </div>
+                  <div class="flip-picture-back">
+                    <img src="assets/dog.png" alt="" width="800" height="800">
+                  </div>
+                </div>
+              </div>
 
-        <h1>V.R. Sheoratan</h1>                
-        <p><b><em>Barista</em></b></p>
-        <p><b><em>Frontend Developer Student in Amsterdam</em></b></p>
-      </header>
+              <h1>V.R. Sheoratan</h1>                
+              <p><b><em>Barista</em></b></p>
+              <p><b><em>Frontend Developer Student in Amsterdam</em></b></p>
+          </header>
 
-      <section>
-        <dl>
-          <dt></dt>
-          <!-- python hover werkt niet -->
-          <dt>Python
-            <span class="popover">Python<br>🏆🏆🏆<br>
-              Ik heb al een beetje ervaring met python.<br>
-              Ik heb een paar projecten gemaakt met python.
-            </span>
-          </dt>
-          <dt></dt>
+          <section>
+            <dl>
+                <dt></dt>
+                <!-- python hover werkt niet -->
+                <dt>Python
+                  <span class="popover">Python<br>🏆🏆🏆<br>
+                    Ik heb al een beetje ervaring met python.<br>
+                    Ik heb een paar projecten gemaakt met python.
+                  </span>
+                </dt>
+                <dt></dt>
 
-          <dt>HTML
-            <span class="popover">HyperText Markup Language<br>🏆<br>
-              Met HTML heb ik een beetje ervaring.<br> 
-              Eerst probeerde ik zelf html en css te leren, maar het was moeilijk voor mij om consistent te blijven.<br>
-              Ik wil wel meer leren over html en css en ik zie mezelf ook werken binnen dit vakgebied.<br>
-              Daarom heb ik voor deze opleiding gekozen.
-            </span>
-          </dt>
+                <dt>HTML
+                  <span class="popover">HyperText Markup Language<br>🏆<br>
+                    Met HTML heb ik een beetje ervaring.<br> 
+                    Eerst probeerde ik zelf html en css te leren, maar het was moeilijk voor mij om consistent te blijven.<br>
+                    Ik wil wel meer leren over html en css en ik zie mezelf ook werken binnen dit vakgebied.<br>
+                    Daarom heb ik voor deze opleiding gekozen.
+                  </span>
+                </dt>
 
-          <dt>programming skills</dt>
+                <dt>programming skills</dt>
+                
+                <dt>CSS
+                  <span class="popover">Cascading Style Sheets<br>🏆<br>
+                    Met CSS heb ik ook een beetje ervaring.<br> 
+                    Ik dacht dat css makkelijk op te pakken was,
+                    maar na de eerste 2 dagen heb ik door dat css meer complex is dan ik dacht.<br>
+                  </span>
+                </dt>
+
+                <dt></dt>
+                <dt>JavaScript
+                  <span class="popover">JavaScript<br>💩<br>
+                    Met JavaScript heb ik geen ervaring.<br> 
+                    ik heb wel gzien hoe de querySelector en addEventListener werken.<br>
+                    Ik denk dat het me zal lukken om die aan te passen.
+                  </span>
+                </dt>
+                <dt></dt>
+
+            </dl>
+          <section>
+
           
-          <dt>CSS
-            <span class="popover">Cascading Style Sheets<br>🏆<br>
-              Met CSS heb ik ook een beetje ervaring.<br> 
-              Ik dacht dat css makkelijk op te pakken was,
-              maar na de eerste 2 dagen heb ik door dat css meer complex is dan ik dacht.<br>
-            </span>
-          </dt>
-
-          <dt></dt>
-          <dt>JavaScript
-            <span class="popover">JavaScript<br>💩<br>
-              Met JavaScript heb ik geen ervaring.<br> 
-              ik heb wel gzien hoe de querySelector en addEventListener werken.<br>
-              Ik denk dat het me zal lukken om die aan te passen.
-            </span>
-          </dt>
-          <dt></dt>
-
-        </dl>
-      <section>
-    </article>
+        </article>
+      <!-- </div> -->
+      <div class="card__back">back</div>
+    </div>
 
     <script src="scripts/script.js"></script>
   

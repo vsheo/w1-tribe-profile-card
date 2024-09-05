@@ -11,8 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  font-family: open sans;
-  /* color: #4e3f10; */
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 article {
@@ -25,8 +24,8 @@ article {
   max-width: 50em;
   min-width: 40em;
   border-radius: 1rem;
-  background: rgb(34,139,34);
-  background: linear-gradient(0deg, rgb(37, 152, 31) 40%, #458b22 100%);
+  /* background: rgb(34,139,34); */
+  background: linear-gradient(0deg, rgb(80, 89, 80) 40%, #434840 100%);
   box-shadow: 0 0 20px 20px rgba(0,0,0,.1);
   transition: .25s;
 }
@@ -39,11 +38,7 @@ header {
   /* 1fr: de ruimte die over blijft */
   /* 2 columns, 3 rows */
   grid-template-columns: min-content 1fr;
-  grid-template-rows: min-content min-content 1fr;
-}
-
-h1 {
-  color: rgb(12, 30, 31);
+  grid-template-rows: min-content min-content min-content;
 }
 
 /* job */
@@ -52,24 +47,12 @@ p {
   padding: 8px;
 }
 
-svg {
-  position: absolute;
-  top: calc(1.25rem - 12px);
-  left: calc(1.25rem - 12px);
-  stroke: #4e54c8;
-  transition-delay: .25s;
-}
-button svg:nth-of-type(2) {
-  opacity: 0;
-  transition-delay: 0ms;
-}
-
 img {
   position: relative;
   width: 10em;
   height: auto;
   border: 4px solid #fff;
-  border-radius: 48%;
+  border-radius: 50%;
   box-shadow: 0 0 2px 2px rgba(0,0,0,.2);
   transition: .25s .15s;
   margin-right: auto;
@@ -78,7 +61,7 @@ img {
 dl {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  /* hoe de list eruit zal zien */
+  /* hoe structuur van de list eruit zal zien */
   grid-template-areas:
     "a b c"
     "d e f"
@@ -103,18 +86,16 @@ dt {
 .popover {
   visibility: hidden;
   width: 400px;
-  background-color: #fff;
-  color: #000000;
+  background-color: #ffffff;
   text-align: center;
   border-radius: 5px;
   padding: 10px;
   position: absolute;
   z-index: 1;
-  bottom: 30%; /* Plaatst de popover boven het dt-element */
+  /* Plaatst de popover boven het dt-element */
+  bottom: 30%;
   left: 50%;
   transform: translateX(-50%);
-  opacity: 0;
-  transition: opacity 0.3s;
 }
 
 dt:hover .popover {
@@ -143,25 +124,21 @@ article > p {
   padding: 3rem 2rem;
   border-radius: 0 0 1rem 1rem;
   text-align: center;
-  background: rgba(255,255,255, 0.5);
 }
 
 /* hover op de article vergroot de article */
 article:hover {
   transform: scale(1.3);
-  box-shadow: 0 0 20px 20px rgba(0,0,0,.1);
+  /* box-shadow: 0 0 20px 20px rgba(0,0,0,.1); */
 }
 
 
 /* source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_flip_card */
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 .flip-picture {
   background-color: transparent;
-  width: 11rem;
-  height: 11rem;
+  width: 10rem;
+  height: 10rem;
+  padding: -1rem;
   perspective: 1000px;
   /* 4 rows maken */
   grid-row-end: 4;
@@ -196,14 +173,44 @@ body {
 
 .flip-picture-front {
   background-color: transparent;
-  color: black;
 }
 
 .flip-picture-back {
   background-color: transparent;
-  color: white;
   transform: rotateY(180deg);
 }
+
+/* flip de article */
+/* https://codepen.io/mondal10/pen/WNNEvjV */
+.card {
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: transform 1s;
+}
+
+.card.is-flipped {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+.card__back {
+  backface-visibility: hidden;
+  background: slateblue;
+  transform: rotateY(180deg);
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+  padding: 3rem 2rem;
+  border-radius: 0 0 1rem 1rem;
+  text-align: center;
+}
+
 
 
 /* verander de layout als het sherm te klein is */
@@ -229,6 +236,10 @@ body {
       "d"
       "e"
       ;
+  }
+
+  .card.is-flipped {
+    transform: none;
   }
 
 }
