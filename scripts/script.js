@@ -12,3 +12,11 @@ function flip () {
   card.classList.toggle('is-flipped')
 };
 
+
+
+// var card_b = document.querySelector('.card')
+// card_b.addEventListener('click', flip_b)
+
+// function flip_b () {
+//   card.classList.replace(" card is-flipped", ".card")
+// };

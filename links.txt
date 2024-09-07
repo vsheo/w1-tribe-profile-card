@@ -26,3 +26,5 @@ HTML elements reference
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element
 
 
+HTML checker
+https://validator.w3.org/

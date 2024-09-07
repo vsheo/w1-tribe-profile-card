@@ -7,18 +7,18 @@
     <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
-    <div class="card">
-      <article class="card__front">
-        <header>
+    <article class="card">
+        <div class="card_front">
+          <header>
             <!-- profile picture and flip -->
             <div class="flip-picture">
               <!-- maakt de foto 3d zodat het geflipped kan worden(niet gespiegeld) -->
               <div class="flip-picture-inner">
                 <div class="flip-picture-front">
-                  <img src="assets/profile-picture.png" alt="" width="800" height="800">
+                  <img class="profile-picture" src="assets/profile-picture.png" alt="" width="800" height="800">
                 </div>
                 <div class="flip-picture-back">
-                  <img  src="assets/dog.png" alt="" width="800" height="800">
+                  <img class="profile-picture" src="assets/dog.png" alt="" width="800" height="800">
                 </div>
               </div>
             </div>
@@ -26,16 +26,15 @@
             <h1>V.R. Sheoratan</h1>                
             <p><b><em>Barista</em></b></p>
             <p><b><em>Frontend Developer Student in Amsterdam</em></b></p>
-        </header>
+            </header>
 
-        <section>
-          <dl>
+          <section>
+            <dl>
               <dt></dt>
               <!-- python hover werkt niet -->
               <dt>Python
                 <span class="popover">Python<br>🏆🏆🏆<br>
-                  Ik heb al een beetje ervaring met python.<br>
-                  Ik heb een paar projecten gemaakt met python.
+                  Ik heb al een wat ervaring met python.<br>
                 </span>
               </dt>
               <dt></dt>
@@ -68,14 +67,13 @@
                 </span>
               </dt>
               <dt></dt>
-
-          </dl>
-        <section>
-
-          
-        </article>
-      <div class="card__back"> <img class="back-picture" src="assets/cool-dog.png"> </div>
-    </div>
+            </dl>
+          </section>
+        </div>
+        <!-- <div class="card_back"> -->
+          <img class="card_back" src="assets/cool-dog.png" alt="ERROR" width="720" height="320">
+        <!-- </div> -->
+    </article>
 
     <script src="scripts/script.js"></script>
   
