@@ -127,7 +127,7 @@ article:hover {
   /* box-shadow: 0 0 20px 20px rgba(0,0,0,.1); */
 }
 
-
+/* flip profile picture */
 /* source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_flip_card */
 .flip-picture {
   background-color: transparent;
@@ -196,10 +196,6 @@ article:hover {
   transform: translateX(-100%) rotateY(-180deg);
 }
 
-/* .card_front{
-  z-index: 1;
-} */
-
 .card_back {
   backface-visibility: hidden;
   transform: rotateY(180deg);
@@ -217,16 +213,6 @@ article:hover {
   box-shadow: 0 0 20px 20px rgba(0,0,0,.1);
   transition: .25s;
 }
-
-/* kan weg */
-.back-Picture {
-  object-fit: cover;
-  border-radius: 1rem
-}
-
-
-
-
 
 
 /* verander de layout als het scherm te klein is */
@@ -318,6 +304,10 @@ article:hover {
     grid-column-start: 1;
     grid-column-end: 1;
     align-self: center;
+  }
+
+  .popover {
+    width: 300px;
   }
 
   /* card flipped niet op telefoons */
