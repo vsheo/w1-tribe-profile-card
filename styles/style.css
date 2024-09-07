@@ -250,8 +250,8 @@ article:hover {
   }
 
   .card {
-    min-width: 25em;
-    min-height: 25em;
+    min-width: 23em;
+    min-height: 23em;
   
     /* kan hierdoor noiet terug flippen */
     backface-visibility: hidden;
