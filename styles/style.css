@@ -311,6 +311,15 @@ article:hover {
       ;
   }
 
+  /* programmings skills boven aan de list krijgen */
+  .skills {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    align-self: center;
+  }
+
   /* card flipped niet op telefoons */
   .card.is-flipped {
     transform: none;
