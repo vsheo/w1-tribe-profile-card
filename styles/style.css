@@ -20,9 +20,6 @@ article {
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  /* width: 50vw;
-  max-width: 50em;
-  min-width: 40em; */
   border-radius: 1rem;
   background: linear-gradient(0deg, rgb(80, 89, 80) 40%, #434840 100%);
   box-shadow: 0 0 20px 20px rgba(0,0,0,.1);
@@ -110,6 +107,7 @@ p {
   margin: 0;
 }
 
+/* kan dit weg? */
 article > p {
   position: relative;
   display: flex;
@@ -198,9 +196,9 @@ article:hover {
   transform: translateX(-100%) rotateY(-180deg);
 }
 
-.card_front{
+/* .card_front{
   z-index: 1;
-}
+} */
 
 .card_back {
   backface-visibility: hidden;
@@ -234,17 +232,74 @@ article:hover {
 /* verander de layout als het scherm te klein is */
 /* in de index file head, moet viewport aanwezigzijn */
 @media (max-width: 600px) {
+  /* scrolling uitschakelen */
+  html, body {
+    overflow: hidden;
+    height: 100%;
+  }
+
+  body {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 6em;
+  }
+
   article {
-    width: 100%;
-    min-width: 0;
+    display: flow-root;
+    align-items: center;
   }
+
+  .card {
+    min-width: 25em;
+    min-height: 25em;
+  
+    /* kan hierdoor noiet terug flippen */
+    backface-visibility: hidden;
+  }
+
   header {
-    width: 100%;
+    width: 25em;
+    height: 19em;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: min-content min-content;
+    grid-template-rows: min-content min-content;
   }
-  img {
-    width: 10rem;
+
+  /* header goed indelen */
+  .flip-picture {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    align-self: center;
   }
-/* programming skils boven aan de list krijgen */
+
+  .name {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    align-self: center;
+  }
+
+  .job {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    align-self: center;
+  }
+
+  .study {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    align-self: center;
+  }
+
+  /* programming skils boven aan de list krijgen */
   dl {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -256,8 +311,14 @@ article:hover {
       ;
   }
 
+  /* card flipped niet op telefoons */
   .card.is-flipped {
     transform: none;
+  }
+
+  /* card vergroot niet als erop geclicked wordt */
+  article:hover {
+    transform: scale(1);
   }
 
 }
