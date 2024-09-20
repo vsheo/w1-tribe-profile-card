@@ -184,7 +184,8 @@ article:hover {
 .card {
   cursor: pointer;
   transform-style: preserve-3d;
-  /* transition: transform 1s; */
+  /* transistion voor de terug flip */
+  transition: transform 1s;
   width: 50vw;
   max-width: 50em;
   min-width: 40em;
@@ -195,6 +196,10 @@ article:hover {
 
 .card.is-flipped {
   transform: translateX(-100%) rotateY(-180deg);
+  /* transistion voor de eerste flip */
+  transition: transform 1s;
+  /* transition voor kleiner worden als je niet meer hover */
+  transition: 1s;
 }
 
 .card_back {
@@ -214,6 +219,10 @@ article:hover {
   border-radius: 1rem;
   box-shadow: 0 0 20px 20px rgba(0,0,0,.1);
   transition: rotateY(0.25s 2s);
+}
+
+.back_img {
+  border-radius: 1rem;
 }
 
 

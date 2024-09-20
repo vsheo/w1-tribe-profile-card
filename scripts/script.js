@@ -10,12 +10,9 @@ card.addEventListener('click', flip)
 
 function flip () {
   card.classList.toggle('is-flipped')
+
+  // flip de kaart terug na 4 seconden
+  setTimeout(function() {
+    card.classList.remove('is-flipped');
+  }, 4000); 
 };
-
-
-// var card_b = document.querySelector('.card')
-// card_b.addEventListener('click', flip_b)
-
-// function flip_b () {
-//   card.classList.replace(" card is-flipped", ".card")
-// };
